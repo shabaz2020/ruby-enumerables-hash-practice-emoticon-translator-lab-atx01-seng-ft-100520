@@ -11,10 +11,10 @@ def load_library(path)
   final_hash
 end
 
-def get_japanese_emoticon
-end
-
 def get_english_meaning(path, emoticon)
   load_library(path).each do |key, value|
     binding.pry
+end
+
+def get_japanese_emoticon
 end
