@@ -3,7 +3,8 @@
 def load_library
   # code goes here
   requre "yaml"
-  gov = 
+  emo = YAML.load_file('emoticons.yml')
+  emo
  end
 
 def get_japanese_emoticon
@@ -11,8 +12,5 @@ def get_japanese_emoticon
 end
 
 def get_english_meaning
-  ("./lib/emoticons.yml", "(Ｔ▽Ｔ)")
-    # => "sad"
-   get_english_meaning("./lib/emoticons.yml", "☜(⌒▽⌒)☞")
-    # => "angel"
+
 end
