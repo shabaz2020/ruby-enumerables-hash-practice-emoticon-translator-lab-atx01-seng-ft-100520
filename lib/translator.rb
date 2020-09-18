@@ -2,10 +2,7 @@
 
 def load_library
   # code goes here
-  happy:
-     - ":)"
-     - "(＾ｖ＾)"
-end
+ end
 
 def get_japanese_emoticon
   # code goes here
