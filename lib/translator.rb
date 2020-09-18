@@ -2,6 +2,8 @@
 
 def load_library
   # code goes here
+  requre "yaml"
+  gov = 
  end
 
 def get_japanese_emoticon
