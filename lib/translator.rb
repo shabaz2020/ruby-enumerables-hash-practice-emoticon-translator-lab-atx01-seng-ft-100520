@@ -26,8 +26,16 @@ def get_japanese_emoticon(yaml_file, emoticon)
   end
 end
 
-def get_english_meaning(emoticon_file, emoticon)
-  emoticon_lib = load_library(emoticon_file)
-  english_meaning = emoticon_lib['get_meaning'][emoticon]
-  english_meaning ? english_meaning : 'Sorry, that emoticon was not found'
-end
+def get_english_meaning(yaml_file, emoticon)
+  library = load_library(yaml_file)
+  response = nil
+  library["get_meaning"].each do |emo, trans|
+    if emo == emoticon
+      response = trans
+    end
+  end
+  if response == nil
+    return "Sorry, that emoticon was not found"
+  else
+    return response
+  end
