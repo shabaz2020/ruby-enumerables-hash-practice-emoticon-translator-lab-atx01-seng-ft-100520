@@ -9,5 +9,8 @@ def get_japanese_emoticon
 end
 
 def get_english_meaning
-  # code goes here
+  ("./lib/emoticons.yml", "(Ｔ▽Ｔ)")
+    # => "sad"
+   get_english_meaning("./lib/emoticons.yml", "☜(⌒▽⌒)☞")
+    # => "angel"
 end
